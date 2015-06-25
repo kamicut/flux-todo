@@ -1,0 +1,33 @@
+{
+  "name": "flux-tut",
+  "version": "0.0.1",
+  "description": "Flux tutorial",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "build": "browserify . -t [envify --NODE_ENV production] | uglifyjs -cm > js/bundle.min.js",
+    "test": "jest"
+  },
+  "author": "Marc Farra",
+  "license": "BSD",
+  "dependencies": {
+    "es6-promise": "^2.3.0",
+    "keymirror": "^0.1.1",
+    "object-assign": "^3.0.0",
+    "react": "^0.13.3"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "envify": "^3.4.0",
+    "jest-cli": "^0.4.13",
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.23",
+    "watchify": "^3.2.3"
+  }
+}
