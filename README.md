@@ -23,8 +23,8 @@ Implementation of the flux tutorial on the [Flux Website](https://facebook.githu
          │                                       │        
          ▼                                       │        
 ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
-│                │  │  MainSection   │  │    TodoItem    │
-│    TodoApp     ├─▶│(ControllerView)│─▶│     (View)     │
+│    TodoApp     │  │                │  │    TodoItem    │
+│(ControllerView)├─▶│  MainSection   │─▶│     (View)     │
 │                │  │                │  │                │
 └────────────────┘  └────────────────┘  └────────────────┘
 ```
